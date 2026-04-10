@@ -1,5 +1,8 @@
 N = int(input())
 M = int(input().rstrip(), 2)
 K = int(input())
-# print(N, M, K)
-print("YES") if M % (2**K) == 0 else print("NO")
+
+D = 1 << K
+
+# print(N, M, K, D)
+print("YES") if M % D == 0 else print("NO")
